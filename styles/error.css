@@ -1,4 +1,5 @@
 .error {
+
   position: absolute;
   inset: 0;
   display: flex;
@@ -8,6 +9,7 @@
 }
 
 .error__title {
+
   color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 30px;
