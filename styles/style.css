@@ -76,13 +76,15 @@ ol {
   display: flex;
   flex-direction: column;
   grid-area: 1 / 1 / 2 / 2;
+
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
-  padding-bottom: 16px;
+  margin-top: 78px;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -237,6 +239,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 30px;
 }
 
 .content__list-item {
@@ -246,11 +249,6 @@ ol {
 .content__card-link {
   display: block;
   text-decoration: none;
-}
-
-.content__card-link:hover {
-  text-decoration: underline #fff;
-  text-underline-offset: 5px;
 }
 
 .content__card-link:active {
@@ -272,10 +270,30 @@ ol {
   font-family: Oswald, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 100%;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.content__video-card-title {
+  padding-bottom: 8px;
+  text-underline-offset: 6px;
+}
+
+.content__video-card-description {
+  padding-bottom: 6px;
+  text-underline-offset: 4px;
+}
+
+.content__card-link:hover .content__video-card-title {
+  text-decoration: underline #fff;
+  text-decoration-thickness: 2px;
+}
+
+.content__card-link:hover .content__video-card-description {
+  text-decoration: underline #fff;
+  text-decoration-thickness: 1px;
 }
 
 .content__video-card-description {
@@ -288,7 +306,6 @@ ol {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  max-height: 64.8px;
 }
 
 .content__video-card {
